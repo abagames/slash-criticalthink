@@ -205,11 +205,7 @@ Claude: ### 2. Foundational Analysis: Assumptions & Context
 - セキュリティやパフォーマンスに関わる実装
 - 外部依存関係の導入
 
-はい、承知いたしました。`slash-criticalthink`の README に、論文(CQoT)を「関連研究」として追記する場合、以下のような内容が考えられます。
-
-このセクションを追加することで、ツールのコンセプトが学術的な文脈の中でどのような位置づけにあるかを示し、その独自性と実践的な価値をより際立たせることができます。
-
-## 関連研究: CQoT アプローチとの比較 (Related Work: Comparison with CQoT)
+## 関連研究: CQoT との比較
 
 AI に自己批判的なプロセスを導入し、その推論能力を向上させるアプローチは、学術研究の分野でも注目されている。特に、Federico Castagna らによる論文「Critical-Questions-of-Thought (CQoT)」が良く知られている。
 
