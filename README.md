@@ -140,18 +140,17 @@ Claude: ### 2. Foundational Analysis: Assumptions & Context
          quality, or (d) help you set it up/use it.
 ```
 
-### Combined Use with Checkpoint Feature (Recommended)
+### Removing Unnecessary Analysis from History (Recommended)
 
 Since the `/criticalthink` command makes the AI self-criticize, **erroneous concerns or overly negative analysis may remain in the dialogue history and distort the AI's subsequent thinking** (context contamination).
 
 To avoid this, the following workflow is recommended:
 
 1. Receive a proposal from the AI
-2. **Create a checkpoint** (Claude Code: `/checkpoint`, Codex CLI: save session)
-3. Run `/criticalthink` for critical analysis
-4. Review the analysis results and note only useful points
-5. **Return to the checkpoint** (discard critical analysis history)
-6. Request improvements from the AI based on noted points
+2. Run `/criticalthink` for critical analysis
+3. Review the analysis results
+4. **If the analysis is unnecessary, press `Esc-Esc` to rewind to your previous message** and return to before running `/criticalthink` (removing the critical analysis from history)
+5. Continue with a new question or request improvements from the AI
 
 This allows you to benefit from critical thinking while avoiding context contamination.
 
