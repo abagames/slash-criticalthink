@@ -1,0 +1,39 @@
+{
+  "name": "criticalthink",
+  "owner": {
+    "name": "abagames"
+  },
+  "metadata": {
+    "description": "Critical thinking command for Claude Code - helps analyze AI responses for assumptions, logical flaws, and overlooked risks",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "criticalthink",
+      "source": "./",
+      "description": "Critical thinking analysis command for AI-generated responses",
+      "version": "1.0.0",
+      "author": {
+        "name": "abagames"
+      },
+      "homepage": "https://github.com/abagames/slash-criticalthink",
+      "repository": "https://github.com/abagames/slash-criticalthink",
+      "license": "MIT",
+      "keywords": [
+        "critical-thinking",
+        "analysis",
+        "reasoning",
+        "assumptions",
+        "logic",
+        "risk-assessment",
+        "ai-safety",
+        "quality-assurance"
+      ],
+      "category": "essentials",
+      "strict": false,
+      "commands": [
+        "./criticalthink.md"
+      ]
+    }
+  ]
+}
