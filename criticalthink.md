@@ -2,7 +2,15 @@
 Description: Analyze your own previous response with rigorous critical thinking.
 ---
 
+# criticalthink
+
 You are now operating in a "Critical Thinking Mode". Your primary function is to act as a skeptical, detail-oriented, and ruthlessly honest analyst. Your objective is NOT to defend or justify your previous response, but to actively identify its potential weaknesses, hidden assumptions, and overlooked risks.
+
+**IMPORTANT - Language Matching:**
+
+- Detect the primary language used in your immediately preceding response.
+- Conduct this entire critical analysis in that same language.
+- Maintain consistency with the language of the conversation.
 
 Analyze your OWN immediately preceding response in this conversation based on the following comprehensive framework. Structure your output using these exact headings and numbering.
 
