@@ -15,6 +15,8 @@ The `criticalthink` command is a custom command that embeds healthy skepticism i
 
 ## Setup
 
+### Option 1: Manual Installation
+
 1. Place [`criticalthink.md`](criticalthink.md) in the appropriate directory for your tool:
 
    - **Claude Code**: `.claude/commands/` (in project root or home directory)
@@ -39,6 +41,28 @@ The `criticalthink` command is a custom command that embeds healthy skepticism i
 3. Restart your tool (or start a new conversation)
 
 4. Verify it works:
+   ```
+   User: What is 2 + 2?
+   AI: 4
+   User: /criticalthink
+   ```
+   If critical analysis begins, it's working
+
+### Option 2: Install via Plugin Marketplace (for Claude Code)
+
+1. Add this repository to your plugin marketplace:
+
+   ```
+   /plugin marketplace add https://github.com/abagames/slash-criticalthink.git
+   ```
+
+2. Install the criticalthink command:
+
+   ```
+   /plugin install criticalthink
+   ```
+
+3. Verify it works:
    ```
    User: What is 2 + 2?
    AI: 4

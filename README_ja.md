@@ -15,14 +15,14 @@
 
 ## セットアップ
 
+### オプション 1: 手動インストール
+
 1. 使用するツールに応じて [`criticalthink.md`](criticalthink.md) を配置:
 
    - **Claude Code**: `.claude/commands/` (プロジェクトルートまたはホームディレクトリ)
    - **Codex CLI**: `~/.codex/prompts/`
 
-2. **言語選択:** 日本語で応答して欲しい場合は、`criticalthink_ja.md` を `criticalthink.md` にリネームして配置
-
-3. ディレクトリを作成してファイルをコピー:
+2. ディレクトリを作成してファイルをコピー:
 
    Claude Code の場合:
 
@@ -38,9 +38,31 @@
    cp criticalthink.md ~/.codex/prompts/
    ```
 
-4. ツールを再起動（または新しい会話を開始）
+3. ツールを再起動（または新しい会話を開始）
 
-5. 動作確認:
+4. 動作確認:
+   ```
+   User: 2 + 2 は？
+   AI: 4
+   User: /criticalthink
+   ```
+   批判的分析が開始されれば成功
+
+### オプション 2: プラグインマーケットプレース経由でインストール (Claude Code 向け)
+
+1. このリポジトリをプラグインマーケットプレースに追加:
+
+   ```
+   /plugin marketplace add https://github.com/abagames/slash-criticalthink.git
+   ```
+
+2. criticalthink コマンドをインストール:
+
+   ```
+   /plugin install criticalthink
+   ```
+
+3. 動作確認:
    ```
    User: 2 + 2 は？
    AI: 4
