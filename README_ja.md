@@ -48,6 +48,8 @@
 
 ### オプション 2: プラグインマーケットプレース経由でインストール (Claude Code 向け)
 
+Claude Code 内で以下のコマンドを実行:
+
 1. このリポジトリをプラグインマーケットプレースに追加:
 
    ```
@@ -65,7 +67,7 @@
 GitHub から直接インストール:
 
 ```bash
-gemini extensions install abagames/slash-criticalthink
+gemini extensions install https://github.com/abagames/slash-criticalthink
 ```
 
 ### インストールの確認

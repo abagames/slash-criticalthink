@@ -67,7 +67,7 @@ Run these commands inside Claude Code:
 Install directly from GitHub:
 
 ```bash
-gemini extensions install abagames/slash-criticalthink
+gemini extensions install https://github.com/abagames/slash-criticalthink
 ```
 
 ### Verify Installation
