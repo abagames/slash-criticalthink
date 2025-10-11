@@ -17,10 +17,11 @@ The `criticalthink` command is a custom command that embeds healthy skepticism i
 
 ### Option 1: Manual Installation
 
-1. Place [`criticalthink.md`](criticalthink.md) in the appropriate directory for your tool:
+1. Place the command file in the appropriate directory for your tool:
 
-   - **Claude Code**: `.claude/commands/` (in project root or home directory)
-   - **Codex CLI**: `~/.codex/prompts/`
+   - **Claude Code**: `.claude/commands/criticalthink.md` (in project root or home directory)
+   - **Codex CLI**: `~/.codex/prompts/criticalthink.md` (in home directory)
+   - **Gemini CLI**: `.gemini/commands/criticalthink.toml` (in project root)
 
 2. Create directory and copy file:
 
@@ -38,17 +39,16 @@ The `criticalthink` command is a custom command that embeds healthy skepticism i
    cp criticalthink.md ~/.codex/prompts/
    ```
 
-3. Restart your tool (or start a new conversation)
+   For Gemini CLI:
 
-4. Verify it works:
+   ```bash
+   mkdir -p .gemini/commands
+   cp commands/criticalthink.toml .gemini/commands/
    ```
-   User: What is 2 + 2?
-   AI: 4
-   User: /criticalthink
-   ```
-   If critical analysis begins, it's working
 
 ### Option 2: Install via Plugin Marketplace (for Claude Code)
+
+Run these commands inside Claude Code:
 
 1. Add this repository to your plugin marketplace:
 
@@ -62,13 +62,25 @@ The `criticalthink` command is a custom command that embeds healthy skepticism i
    /plugin install criticalthink
    ```
 
-3. Verify it works:
-   ```
-   User: What is 2 + 2?
-   AI: 4
-   User: /criticalthink
-   ```
-   If critical analysis begins, it's working
+### Option 3: Install as Gemini CLI Extension (for Gemini CLI)
+
+Install directly from GitHub:
+
+```bash
+gemini extensions install abagames/slash-criticalthink
+```
+
+### Verify Installation
+
+After installation, restart your tool and verify it works:
+
+```
+User: What is 2 + 2?
+AI: 4
+User: /criticalthink
+```
+
+If critical analysis begins, it's working
 
 ## Usage
 

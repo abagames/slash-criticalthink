@@ -17,10 +17,11 @@
 
 ### オプション 1: 手動インストール
 
-1. 使用するツールに応じて [`criticalthink.md`](criticalthink.md) を配置:
+1. 使用するツールに応じてコマンドファイルを配置:
 
-   - **Claude Code**: `.claude/commands/` (プロジェクトルートまたはホームディレクトリ)
-   - **Codex CLI**: `~/.codex/prompts/`
+   - **Claude Code**: `.claude/commands/criticalthink.md` (プロジェクトルートまたはホームディレクトリ)
+   - **Codex CLI**: `~/.codex/prompts/criticalthink.md` (ホームディレクトリ)
+   - **Gemini CLI**: `.gemini/commands/criticalthink.toml` (プロジェクトルート)
 
 2. ディレクトリを作成してファイルをコピー:
 
@@ -38,15 +39,12 @@
    cp criticalthink.md ~/.codex/prompts/
    ```
 
-3. ツールを再起動（または新しい会話を開始）
+   Gemini CLI の場合:
 
-4. 動作確認:
+   ```bash
+   mkdir -p .gemini/commands
+   cp commands/criticalthink.toml .gemini/commands/
    ```
-   User: 2 + 2 は？
-   AI: 4
-   User: /criticalthink
-   ```
-   批判的分析が開始されれば成功
 
 ### オプション 2: プラグインマーケットプレース経由でインストール (Claude Code 向け)
 
@@ -62,13 +60,25 @@
    /plugin install criticalthink
    ```
 
-3. 動作確認:
-   ```
-   User: 2 + 2 は？
-   AI: 4
-   User: /criticalthink
-   ```
-   批判的分析が開始されれば成功
+### オプション 3: Gemini CLI 拡張機能としてインストール (Gemini CLI 向け)
+
+GitHub から直接インストール:
+
+```bash
+gemini extensions install abagames/slash-criticalthink
+```
+
+### インストールの確認
+
+インストール後、ツールを再起動して動作確認:
+
+```
+User: 2 + 2 は？
+AI: 4
+User: /criticalthink
+```
+
+批判的分析が開始されれば成功
 
 ## 使い方
 
