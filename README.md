@@ -21,7 +21,8 @@ The `criticalthink` command is a custom command that embeds healthy skepticism i
 
    - **Claude Code**: `.claude/commands/criticalthink.md` (in project root or home directory)
    - **Codex CLI**: `~/.codex/prompts/criticalthink.md` (in home directory)
-   - **Gemini CLI**: `.gemini/commands/criticalthink.toml` (in project root)
+   - **Gemini CLI**: `.gemini/commands/criticalthink.toml` (in project root or home directory)
+   - **Qwen Code**: `.qwen/commands/criticalthink.toml` (in project root or home directory)
 
 2. Create directory and copy file:
 
@@ -46,6 +47,13 @@ The `criticalthink` command is a custom command that embeds healthy skepticism i
    cp commands/criticalthink.toml .gemini/commands/
    ```
 
+   For Qwen Code:
+
+   ```bash
+   mkdir -p .qwen/commands
+   cp commands/criticalthink.toml .qwen/commands/
+   ```
+
 ### Option 2: Install via Plugin Marketplace (for Claude Code)
 
 Run these commands inside Claude Code:
@@ -68,6 +76,18 @@ Install directly from GitHub:
 
 ```bash
 gemini extensions install https://github.com/abagames/slash-criticalthink
+```
+
+### Option 4: Install as Qwen Code Extension (for Qwen Code)
+
+> Caution: As of 2025-10-20, while the [official documentation for Qwen Code](https://qwenlm.github.io/qwen-code-docs/en/extension/#installing-extensions) states the following, it is surprisingly confirmed that this feature has not yet been implemented.
+Therefore, after installing the 'slash-criticalthink' extension in Gemini CLI, please copy the extension in the `.gemini` directory to the `.qwen` directory, if it does not exist `qwen-extension.json` file the `.gemini` directory then modify the `gemini-extension.json` file to `qwen-extension.json` to use it.
+Also, the command line command implemented in Qwen Code (`qwen --extensions`) is different from the current official documentation (`qwen extensions`), so the installation method below may be subject to change.
+
+Install directly from GitHub:
+
+```bash
+qwen extensions install https://github.com/abagames/slash-criticalthink
 ```
 
 ### Verify Installation
